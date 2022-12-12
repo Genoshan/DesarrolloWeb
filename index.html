@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">   
+    <title>HW Store</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<header >
+    <!-- <nav class="navbar navbar-expand-lg bg-light"> -->
+    <nav class="navbar navbar-expand-lg navcustom">    
+    
+    <!-- <nav class="navbar navbar-expand-lg navcustom"> -->
+        <div class="container-fluid ">
+          <a class="navbar-brand logo alogo " href="index.html">HW STORE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-1 d-flex " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navcustom">
+              <li class="nav-item">
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="./pages/login.html">LOGIN</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/carrito.html">CARRITO</a>
+              </li>
+              
+              <div>
+                  <form class="d-flex " role="buscar">
+                      <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>         
+
+                </div>          
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./pages/suscribite.html">SUSCRIBITE</a>
+                </li>                        
+                  <li class="nav-item">
+                    <a class="nav-link " href="./pages/test.html">TEST</a>
+                </li>                        
+                </ul>
+              </div>
+
+          </div>
+        </div>
+      </nav>
+</header>
+
+<main>        
+
+    <section class="portada-index">
+
+        <div class="portada-texto">
+            <h2>PRODUCTOS</h2>
+        </div>        
+
+    <div class="container mt-5 mb-3">
+        <div class="row ">
+            <div class="col-md-4 ">
+                <div class="card p-3 mb-2 micard">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">                            
+                            <div class="ms-3 c-details misitems">
+                                <h5>NOTEBOOK MSI</h5>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="mt-5">
+                                <div class="row d-flex justify-content-center my-4 misitems">
+                                    <img src="./img/MSI.png" class="w-100 link1" alt="Articulo">
+                                    <h4 class="d-flex flex-row align-items-center">$1800</h4>
+                                </div>                                            
+                                <button type="button" class="btn btn-primary btn-lg btn-block " data-mdb-toggle="tooltip"
+                                title="Agregar al carrito">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                              </button>
+
+                      <button type="button" class="btn btn-danger btn-lg btn-block " data-mdb-toggle="tooltip"
+                      title="Agregar al carrito">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+                          </svg>                    
+                      </button>
+                      
+                    </div>
+                </div>
+            </div>    
+
+            <div class="col-md-4 ">
+                <div class="card p-3 mb-2 micard">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">                            
+                            <div class="ms-3 c-details misitems">
+                                <h5>MACBOOK PRO</h5>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="mt-5">
+                                <div class="row d-flex justify-content-center my-4 misitems">
+                                    <img src="./img/macbpro.png" class="w-100 link1" alt="Articulo" >
+                                    <h4 class="d-flex flex-row align-items-center">$3000</h4>
+                                </div>                                            
+                                <button type="button" class="btn btn-primary btn-lg btn-block " data-mdb-toggle="tooltip"
+                                title="Agregar al carrito">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                              </button>
+
+                      <button type="button" class="btn btn-danger btn-lg btn-block " data-mdb-toggle="tooltip"
+                      title="Agregar al carrito">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+                          </svg>                    
+                      </button>
+                    </div>
+                </div>
+            </div>               
+
+            <div class="col-md-4 ">
+                <div class="card p-3 mb-2 micard  ">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">                            
+                            <div class="ms-3 c-details misitems">
+                                <h5>GAMING PC</h5>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="mt-5">
+                                <div class="row d-flex justify-content-center my-4 misitems">
+                                    <img src="./img/pc.png" class="w-100 link1"  alt="Articulo" >
+                                    <h4 class="d-flex flex-row align-items-center">$2000</h4>
+                                </div>                                            
+                                <button type="button" class="btn btn-primary btn-lg btn-block  " data-mdb-toggle="tooltip"
+                                title="Agregar al carrito">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                              </button>
+
+                      <button type="button" class="btn btn-danger btn-lg btn-block " data-mdb-toggle="tooltip"
+                      title="Agregar al carrito">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+                          </svg>                    
+                      </button>
+                    </div>
+                </div>
+            </div>           
+        </div>        
+    </section>
+</main>
+
+<!-- <footer class="bg-light text-center text-lg-start"> -->
+    <footer class="text-center text-lg-start mt-auto">    
+    <div class="text-center p-3 mifooter">
+      <p>© 2022 Copyright: <a href="#" class="links">MartinDesign.com</a>  </p>
+    </div>    
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
