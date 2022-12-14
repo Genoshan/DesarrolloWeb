@@ -281,4 +281,25 @@ a.menu:hover {
   padding: 24px 10px;
 }
 
+.navcustom {
+  background-color: #562f79;
+}
+
+.logo {
+  overflow: hidden;
+  background-color: #432c7a;
+}
+
+.alogo {
+  color: white;
+}
+
+nav .navbar-nav li a {
+  color: white !important;
+}
+
+nav .navbar-brand {
+  color: white !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
